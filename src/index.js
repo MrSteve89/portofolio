@@ -1,15 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ScriptTag from 'react-script-tag';
 import './index.css';
 import App from './App';
-import Background from './Background/Background';
 import * as serviceWorker from './serviceWorker';
+import 'tachyons';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ScriptTag type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" />
-    <Background />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
