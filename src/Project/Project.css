@@ -1,0 +1,29 @@
+.project-thumbanil, .description {
+	border-radius: 5px;
+}
+
+.container {
+	width: 50%;
+	display: flex;
+	margin: 10px auto;
+	filter: blur(3px);
+	margin: 50px auto;
+}
+
+.container:hover {
+	filter: none;
+}
+
+.project-thumbnail {
+	width: 50%;
+	height: 300px;
+	background: linear-gradient(to bottom left, #00ccff, #00ff99);
+}
+
+.description {
+	width: 50%;
+	text-align: center;
+	padding: 130px 30px;
+	color: #fff;
+	background: #00ccff;
+}

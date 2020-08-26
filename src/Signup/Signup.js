@@ -1,15 +1,19 @@
 import React from 'react';
-import './Login.css';
+import '../Login/Login.css';
 
-const Login = () => {
+const Signup = () => {
 	return (
 		<div>
 		    <div className="login-box">
-			  <h2 id='login'>Login</h2>
+			  <h2 id='signup'>Sign Up</h2>
 			  <form>
 			    <div className="user-box">
 			      <input type="text" name="" required=""/>
 			      <label>Username</label>
+			    </div>
+			    <div className="user-box">
+			      <input type="email" name="" required=""/>
+			      <label>Email</label>
 			    </div>
 			    <div className="user-box">
 			      <input type="password" name="" required=""/>
@@ -20,14 +24,14 @@ const Login = () => {
 			      <span></span>
 			      <span></span>
 			      <span></span>
-			      Login
+			      Sign Up
 			    </a>
 			    <a className='signup grow' href="#">
 			      <span></span>
 			      <span></span>
 			      <span></span>
 			      <span></span>
-			      Sign Up
+			      Login
 			    </a>
 			  </form>
 			</div>
@@ -35,4 +39,4 @@ const Login = () => {
 	);
 }
 
-export default Login;
+export default Signup;
