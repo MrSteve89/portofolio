@@ -4,9 +4,9 @@ import './Title.css';
 
 const Title = () => {
 	return(
-		<div className='shadow-2 br2 pa1 title'>
-			<h1 className='white'>My Portofolio</h1>
-			<h1 className='white'>Name</h1>
+		<div className='shadow-2 pa1 title'>
+			<h1>My Portofolio</h1>
+			<h1>My Name</h1>
 		</div>	
 	);
 }

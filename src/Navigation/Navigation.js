@@ -1,24 +1,30 @@
 import React from 'react';
-// import '../Login/Login.css';
 import './Navigation.css';
 
-const Navigation = () => {
+const Navigation = ({selectPath}) => {
 	return(
 		<div className='shadow-2 logout'>
-			<a className='grow' id='signup' href="#">
+			<div 
+				onClick={()=>selectPath('signup')}
+				className='grow' 
+				id='signup' 
+			>
 				<span></span>
 				<span></span>
 				<span></span>
 				<span></span>
 				Sign up
-			</a>
-			<a className='grow' href="#">
+			</div>
+			<div 
+				onClick={()=>selectPath('login')}
+				className='grow' 
+			>
 				<span></span>
 				<span></span>
 				<span></span>
 				<span></span>
 				Logout
-			</a>
+			</div>
 		</div>	
 	);
 }

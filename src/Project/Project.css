@@ -1,29 +1,66 @@
-.project-thumbanil, .description {
-	border-radius: 5px;
-}
-
-.container {
-	width: 50%;
+.project {
+	position: relative;
+	width: 30%; 
+	padding: 10px;
+	background: rgba(0,0,0,.4);
+	border-radius: 20px;
 	display: flex;
-	margin: 10px auto;
-	filter: blur(3px);
-	margin: 50px auto;
+	flex-flow: column;
+	align-items: center;
+	margin: 30px;
 }
 
-.container:hover {
+.project:hover {
 	filter: none;
 }
 
-.project-thumbnail {
-	width: 50%;
-	height: 300px;
-	background: linear-gradient(to bottom left, #00ccff, #00ff99);
+.thumbnail {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
 }
 
-.description {
-	width: 50%;
+
+.project-title {
+	position: absolute;
+	z-index: 1;
+	bottom: 0px;
+	width: 100%;
+	height: 100px;
+	padding: 30px;
+	color: white;
 	text-align: center;
-	padding: 130px 30px;
-	color: #fff;
-	background: #00ccff;
+	text-transform: uppercase;
+	font-weight: bold;
 }
+
+
+
+.project-menu {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	font-size: 4em;
+	color: rgba(250,0,0,0.9);
+	cursor: pointer;
+}
+
+.project-menu-list {
+	position: absolute;
+	top: 10px;
+	right: -110px;
+	background: rgba(0,0,0,.3);
+	padding: 2px;
+	color: white;
+}
+
+.project-menu-list div {
+	padding: 10px;
+	background: rgba(0,0,0,0.4);
+	cursor: pointer;
+}
+
+.project-menu-list div:hover {
+	background: rgba(0,0,0,0.2);
+}
+

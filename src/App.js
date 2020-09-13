@@ -1,25 +1,39 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navigation from './Navigation/Navigation';
 import Login from './Login/Login';
 import Signup from './Signup/Signup';
 import Title from './Title/Title';
-import Project from './Project/Project';
-import Project2 from './Project2/Project2';
+import ProjectList from './ProjectList/ProjectList';
 import './App.css';
 
 
-function App() {
-  return (
-    <div>
-    	<Navigation />
-    	<Title />
-    	<Project />
-    	<Project2/>
-    	<Project />
-    	<Project2/>
+const App = () => {
 
-    </div>
-  );
+	const [path, setPath] = useState('home');
+
+	const selectPath = (path) => {
+		setPath(path);
+	}
+
+	return (
+	    <div>
+	    {path === 'home' 
+	    ?
+	    <div>
+	    	<Navigation selectPath={selectPath}/>
+	    	<Title />
+		    <ProjectList />	
+	    </div>
+	    : (
+	    	path === 'login' 
+	    	?
+	    	<Login selectPath={selectPath}/>
+	    	:
+	    	<Signup selectPath={selectPath}/>
+	    	)
+	    }
+	    </div>
+	);
 }
 
 export default App;

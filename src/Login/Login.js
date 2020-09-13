@@ -1,34 +1,40 @@
 import React from 'react';
 import './Login.css';
 
-const Login = () => {
+const Login = ({selectPath}) => {
 	return (
 		<div>
 		    <div className="login-box">
 			  <h2 id='login'>Login</h2>
 			  <form>
 			    <div className="user-box">
-			      <input type="text" name="" required=""/>
 			      <label>Username</label>
+			      <input type="text" name="" required=""/>
 			    </div>
 			    <div className="user-box">
-			      <input type="password" name="" required=""/>
 			      <label>Password</label>
+			      <input type="password" name="" required=""/>
 			    </div>
-			    <a className='grow' href="#">
+			    <div 
+			    	onClick={()=>selectPath('home')}
+			    	className='login grow' 
+			    >
 			      <span></span>
 			      <span></span>
 			      <span></span>
 			      <span></span>
 			      Login
-			    </a>
-			    <a className='signup grow' href="#">
+			    </div>
+			    <div
+			    	onClick={()=>selectPath('signup')}
+			    	className='signup grow' 
+			    >
 			      <span></span>
 			      <span></span>
 			      <span></span>
 			      <span></span>
 			      Sign Up
-			    </a>
+			    </div>
 			  </form>
 			</div>
 		</div>    
