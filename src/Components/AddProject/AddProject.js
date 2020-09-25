@@ -8,7 +8,7 @@ const AddProject = ({projectList, setProjectList}) => {
 			...projectList,
 			{
 				id: projectList.length,
-				src: '',
+				src: require('./tree.jpg'),
 				title: ''
 			}
 		]);
@@ -17,10 +17,10 @@ const AddProject = ({projectList, setProjectList}) => {
 
 	return (
 		<div>
+			<h2 className='add-project-title'>Click the button below to add a NEW Project:</h2>
 			<div 
 				onClick={onAddProject}
-				className="add-project grow shadow-2 center"
-				id = 'blue'
+				className="add-project-button grow shadow-2 center"
 			>&#10010;</div>
 		</div>
 	);

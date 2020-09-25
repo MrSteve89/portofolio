@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import Navigation from './Navigation/Navigation';
-import Login from './Login/Login';
-import Signup from './Signup/Signup';
-import Title from './Title/Title';
-import ProjectList from './ProjectList/ProjectList';
+import Navigation from './Components/Navigation/Navigation';
+import Login from './Components/Login/Login';
+import Signup from './Components/Signup/Signup';
+import Title from './Components/Title/Title';
+import ProjectList from './Containers/ProjectList/ProjectList';
 import './App.css';
 
 

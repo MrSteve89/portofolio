@@ -2,9 +2,8 @@ import React, {useState} from 'react';
 import './Modal.css';
 
 
-const Modal = ({project, active, titleHolder}) => {
+const Modal = ({project, active}) => {
 	const [title, setTitle] = useState('');
-	const [displayModal, setdisplayModal] = useState(true);
 
 	const onTitleChange = (event) => {
 		setTitle(event.target.value);
@@ -12,11 +11,11 @@ const Modal = ({project, active, titleHolder}) => {
 
 	const onAcceptTitle = () => {
 		project.title = title;
-		active(setdisplayModal(false));
+		active(false);
 	}
 
 	const onCancelTitle = () => {
-		active(setdisplayModal(false));
+		active(false);
 	}
 
 	return (
@@ -28,7 +27,7 @@ const Modal = ({project, active, titleHolder}) => {
 					<input 
 						onChange={onTitleChange}
 						id='title-holder'
-						value={titleHolder} 
+						value={title} 
 					/>
 					<div className='buttons'>
 						<div 

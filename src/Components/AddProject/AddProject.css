@@ -1,0 +1,27 @@
+.add-project-title {
+	text-align: center;
+	color: rgba(250,250,250,.8);
+}
+
+.add-project-button {
+	width: 130px;
+	height: 80px;
+	background: rgba(0,0,0,.4);
+	border-radius: 20px;
+	border: 2px solid #ff7f7f;
+	margin: 10px;
+	text-align: center;
+	color: #ff7f7f;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 4em;
+}
+
+.add-project-button:hover {
+	background: #ff7f7f;
+	color: #fff;
+	box-shadow: 0 0 5px #ff7f7f,
+	            0 0 25px #ff7f7f,
+	            0 0 50px #ff7f7f,
+	            0 0 100px #ff7f7f;
+}
